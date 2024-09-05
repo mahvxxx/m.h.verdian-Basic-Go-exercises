@@ -179,8 +179,12 @@ func main() {
 
 	x := true
 	s := "Japan"
+
+	// or = ||
 	if s == "Jpn" || x {
 		fmt.Println(s)
+
+	// and = &&
 	}
 	if s == "Jpn" && x {
 		fmt.Println(s)
