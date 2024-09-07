@@ -98,6 +98,9 @@ func main() {
 	}
 
 	for i := range 3 {
+		if i==2 {
+			break
+		}
 		fmt.Println("range", i)
 	}
 
@@ -110,8 +113,48 @@ func main() {
 		if n%2 == 0 {
 			continue
 		}
+		
 		fmt.Println(n)
 	}
+
+	foo := []string{"a","b","c"}
+	for i, value := range fo {
+		fmt.Printf("%s at %d \n", value , i) //a at 0
+		//a at 0
+		//b at 1
+		//c at 2
+	}
+
+}
+*/
+
+// str
+
+/*
+package main
+
+import "fmt"
+
+func main() {
+	book := "Y my room"
+
+	fmt.Println(len(book))
+	fmt.Printf("book[0] = %v , type = %T" , book[0], book[0]) //  book[0] = 86 , type = uint8
+
+	// book[0] = 116  // error (string are immutable)
+
+	//Slice (start , end )
+
+	fmt.println(book[4 : 11])
+	fmt.println(book[4 :])
+	fmt.println(book[: 11])
+
+	// MULTY
+	pome := `
+	i in my room
+	my firend in out
+	`
+	fmt.println(pome)
 }
 */
 
@@ -394,6 +437,8 @@ func main() {
 	fmt.Println(arr)
 	fmt.Println(len(arr))
 	fmt.Println(cap(arr))
+
+	
 }
 
 */
